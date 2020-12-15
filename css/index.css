@@ -1342,7 +1342,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url(https://img.xiaojia.work/img/bg2.png);
+  background: '';
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
@@ -3069,6 +3069,13 @@ blockquote footer cite:before {
   -moz-background-size: cover;
   background-size: cover;
 }
+#footer:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  content: '';
+}
 #footer-wrap {
   position: relative;
   padding: 2rem 1rem;
@@ -3104,12 +3111,12 @@ blockquote footer cite:before {
   transition: all 0.5s;
 }
 #page-header.full_page {
-  height: 100vh;
+  height: 300px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
   position: absolute;
-  top: 43%;
+  top: 40%;
   padding: 0 0.5rem;
   width: 100%;
 }
@@ -5222,7 +5229,7 @@ blockquote.pullquote.right {
   }
 }
 [data-theme='dark'] {
-  --global-bg: #d1d1d1;
+  --global-bg: #0d0d0d;
   --font-color: rgba(255,255,255,0.7);
   --hr-border: rgba(255,255,255,0.4);
   --hr-before-color: rgba(255,255,255,0.7);
@@ -5256,7 +5263,7 @@ blockquote.pullquote.right {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.1);
   content: '';
 }
 [data-theme='dark'] #article-container code {
