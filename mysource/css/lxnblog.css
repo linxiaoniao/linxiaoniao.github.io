@@ -1,5 +1,20 @@
+
 body {
         background-image: url("https://img.xiaojia.work/img/bg5.png");
         background-size : 4% ;
         background-repeat: repeat;
  }
+
+
+/*.outSide{
+        font-size: 30px;
+
+        transform: rotate(4deg);
+        background-image: url("https://img.xiaojia.work/img/bg5.png");
+
+}
+
+.textInSide {
+        color: red ;
+        transform: rotate(-4deg);
+}
