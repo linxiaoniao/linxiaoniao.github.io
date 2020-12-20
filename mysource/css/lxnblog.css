@@ -3,6 +3,7 @@ body {
         background-image: url("https://img.xiaojia.work/img/bg5.png");
         background-size : 4% ;
         background-repeat: repeat;
+        
  }
 
 
@@ -17,4 +18,15 @@ body {
 .textInSide {
         color: red ;
         transform: rotate(-4deg);
+}*/
+
+/*鼠标样式*/
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+        default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+        default;
 }
