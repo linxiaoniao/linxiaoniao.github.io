@@ -4556,9 +4556,9 @@ figure.gallery-group img {
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   -moz-transition: opacity 0.35s, -moz-transform 0.35s;
   -o-transition: opacity 0.35s, -o-transform 0.35s;
