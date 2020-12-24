@@ -1,5 +1,6 @@
+/*背景图片*/
 body {
-        background-image: url("https://img.xiaojia.work/img/bg5.png");
+        background-image: url("https://img.xiaojia.work/img/bg5.png!cover");
         background-size : 4% ;
         background-repeat: repeat;
         
