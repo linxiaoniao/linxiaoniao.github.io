@@ -6,7 +6,6 @@ body {
         
  }
 
-
 /*鼠标样式*/
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
@@ -18,3 +17,119 @@ img {
         default;
 }
 
+:root{
+  --lxn-white: #fff;
+  --lxn-blue: #286dea;
+  --lxn-none: rgba(0,0,0,0);
+  --lxn-gray: #999999;
+}
+[data-theme=light] {
+  --lxn-fontcolor: #000;
+  --lxn-background: #fff;
+  --lxn-maskbg: rgba(255, 255, 255, 0.6);
+  --lxn-navbg: rgba(255, 255, 255, 0.9);;
+  --lxn-hovertext: #286dea;
+  --lxn-ahoverbg: #F7F7FA;
+  --lxn-lighttext: #ef794f;
+  --lxn-secondtext: rgba(0, 0, 0, 0.6);
+  --lxn-card-btn-bg: #F7F7FA;
+  --lxn-post-blockquote-bg: #f2f5f7;
+  --lxn-sceondbg: #F7F7FA;
+}
+[data-theme=dark] {
+  --lxn-fontcolor: #fff;
+  --lxn-background: #1e1e1e;
+  --lxn-maskbg: rgba(0,0,0, 0.6);
+  --lxn-navbg: rgba(0,0,0, 0.9);
+  --lxn-hovertext: #286dea;
+  --lxn-ahoverbg: #fff;
+  --lxn-lighttext: #f2b94b;
+  --lxn-secondtext: rgba(255, 255, 255, 0.6);
+  --lxn-card-btn-bg: #3f3f3f;
+  --lxn-post-blockquote-bg: #000;
+  --lxn-sceondbg: #252627;
+}
+
+/* 评论 */
+/* ---------------------------------------------------------------- */
+
+/* 填写项标题 */
+.el-input-group__append, .el-input-group__prepend{
+  background-color: var(--lxn-sceondbg)!important;
+  color: var(--lxn-fontcolor)!important;
+  border: 0px solid var(--lxn-blue)!important;
+}
+
+/* 输入框 */
+.el-input__inner{
+  background: var(--lxn-post-blockquote-bg)!important;
+  border: 0px solid var(--lxn-blue)!important;
+  color: var(--lxn-fontcolor)!important;
+}
+
+/* 评论输入框 */
+.el-textarea__inner{
+  background: var(--lxn-post-blockquote-bg)!important;
+  border: 0px solid var(--lxn-blue)!important;
+  color: var(--lxn-fontcolor)!important;
+}
+
+/* 评论数量字号 */
+#twikoo > div.tk-comments > div.tk-comments-container > div.tk-comments-title > span:nth-child(1){
+  display: none!important;
+}
+
+.tk-icon[data-v-2619081a]{
+  transform: translateY(-46px);
+}
+
+/* 加载时背景颜色 */
+.el-loading-mask{
+  background-color: var(--lxn-background)!important;
+}
+
+
+/* 评论博主标签圆角 */
+.tk-tag-green{
+  border-radius: 12px!important;
+  border: 0px solid #e1f3d8!important;
+}
+
+[data-theme=dark] .tk-tag-green{
+  background-color: #67c23a21!important;
+}
+
+/* 预览按钮 */
+.el-button{
+  background: var(--lxn-card-btn-bg)!important;
+  border: 0px solid var(--lxn-blue)!important;
+  color: var(--lxn-fontcolor)!important;
+}
+
+.el-button:hover{
+  background: var(--lxn-blue)!important;
+  color: var(--lxn-white)!important;
+}
+
+/* 发送按钮正常状态 */
+.el-button--primary{
+  background-color: var(--lxn-blue)!important;
+  border-color: var(--lxn-blue)!important;
+  color: var(--lxn-white)!important;
+}
+
+/* 发送按钮禁用状态 */
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover{
+  opacity: 0.4;
+}
+
+/* 更多评论的渐变遮罩 */
+[data-theme=dark] .tk-expand{
+  background: linear-gradient(rgba(29, 31, 32,0), rgba(29, 31, 32,1))!important;
+  color: var(--lxn-fontcolor);
+}
+
+/* 评论时间 */
+.tk-time{
+  color: var(--lxn-gray);
+}
