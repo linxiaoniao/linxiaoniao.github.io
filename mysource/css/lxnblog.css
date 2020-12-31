@@ -78,10 +78,21 @@ img {
   right: 0;
   margin: auto;
 }
+/*去除侧边栏icon*/
 #aside_content .item-headline {
   display: none;
 }
+/*文章页header*/
+#post-info .post-title {
+  font-size: 3rem;
+}
+#page-header.post-bg:before {
+  background-color: var(--hexo-maskbg) !important;
+}
 
+#article-container img {
+  border-radius: 10px;
+}
 /* 评论 */
 /* ---------------------------------------------------------------- */
 
