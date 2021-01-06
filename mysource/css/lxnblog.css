@@ -54,7 +54,23 @@
 [data-theme="dark"] #web_bg {
   opacity: .9;
 }
+/*dark下亮度*/
+[data-theme='dark'] .hide-button, 
+[data-theme='dark'] .btn-beautify, 
+[data-theme='dark'] .mermaid, 
+[data-theme='dark'] .post-outdate-notice, 
+[data-theme='dark'] .error-img, 
+[data-theme='dark'] #article-container iframe, 
+[data-theme='dark'] img, 
+[data-theme='dark'] .gist, 
+[data-theme='dark'] .ads-wrap {
+   filter: brightness(1);
+  }
 
+/*post高度*/
+#recent-posts > .recent-post-item {
+    height: 17.5em;
+  }
 /*鼠标样式*/
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
@@ -79,7 +95,7 @@ img {
   margin: auto;
 }
 /*去除侧边栏icon*/
-#aside_content .item-headline {
+#aside-content .item-headline {
   display: none;
 }
 /*文章页header*/
